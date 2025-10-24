@@ -1,6 +1,4 @@
-#include "ergodox_ez.h"
-#include "action_layer.h"
-
+#include  QMK_KEYBOARD_H
 #define ___ KC_TRNS
 //#define D(STUFF) SS_DOWN(STUFF)
 //#define U(STUFF) SS_UP(STUFF)
@@ -83,7 +81,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                   KC_LALT,         KC_NUBS,        KC_LGUI,        KC_LEFT, KC_RGHT,
 
                                                                                ALT_T(KC_APP), KC_HOME,
-                                                                                              KC_DELT,
+                                                                                              KC_DEL,
 								       KC_SPC,       KC_BSPC, KC_LCTL,
 
 
@@ -138,7 +136,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                   ___, KC_F6,      KC_F7,  KC_F8,  KC_F9,  KC_F10,        KC_F11,
                   ___, KC_UP,      KC_7,   KC_8,   KC_9,   KC_PAST,       KC_F12,
                        KC_DOWN,    KC_4,   KC_5,   KC_6,   KC_PPLS,       ___,
-                  ___, LSFT(KC_6), KC_1,   KC_2,   KC_3,   RALT(KC_MINS), KC_CAPSLOCK,
+                  ___, LSFT(KC_6), KC_1,   KC_2,   KC_3,   RALT(KC_MINS), KC_CAPS_LOCK,
                                    KC_0,    KC_0,   KC_DOT, KC_EQL,       SE_TILD,
 
                   ___, ___,
@@ -355,34 +353,34 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             SEND_STRING( SS_DOWN(X_LALT) SS_TAP(X_INSERT) SS_UP(X_LALT) SS_TAP(X_DOWN) SS_TAP(X_DOWN) SS_TAP(X_DOWN) SS_TAP(X_ENT) );
             return false;
         case IJ_CMNT:
-            SEND_STRING( SS_DOWN(X_LCTRL) SS_TAP(X_PSLS) SS_UP(X_LCTRL) );
+            // SEND_STRING( SS_DOWN(X_LCTRL) SS_TAP(X_PSLS) SS_UP(X_LCTRL) );
             return false;
         case IJ_BCMNT:
-            SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LSFT) SS_TAP(X_PSLS) SS_UP(X_LSFT) SS_UP(X_LCTRL) );
+            // SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LSFT) SS_TAP(X_PSLS) SS_UP(X_LSFT) SS_UP(X_LCTRL) );
             return false;
         case IJ_BACK:
-            SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_LEFT) SS_UP(X_LCTRL) SS_UP(X_LALT) );
+            // SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_LEFT) SS_UP(X_LCTRL) SS_UP(X_LALT) );
             return false;
         case IJ_FRWRD:
-            SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_RGHT) SS_UP(X_LCTRL) SS_UP(X_LALT) );
+            // SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_RGHT) SS_UP(X_LCTRL) SS_UP(X_LALT) );
             return false;
         case IJ_TEST:
-            SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LSFT) SS_TAP(X_T) SS_UP(X_LCTRL) SS_UP(X_LSFT) );
+            // SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LSFT) SS_TAP(X_T) SS_UP(X_LCTRL) SS_UP(X_LSFT) );
             return false;
         case IJ_TGL_T:
-            SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LSFT) SS_TAP(X_F12) SS_UP(X_LCTRL) SS_UP(X_LSFT) );
+            // SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LSFT) SS_TAP(X_F12) SS_UP(X_LCTRL) SS_UP(X_LSFT) );
             return false;
         case IJ_SRND:
-            SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_T) SS_UP(X_LCTRL) SS_UP(X_LALT) );
+            // SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_T) SS_UP(X_LCTRL) SS_UP(X_LALT) );
             return false;
         case IJ_EXT_M:
-            SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_M) SS_UP(X_LCTRL) SS_UP(X_LALT) );
+            // SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_M) SS_UP(X_LCTRL) SS_UP(X_LALT) );
             return false;
         case IJ_EXT_V:
-            SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_V) SS_UP(X_LCTRL) SS_UP(X_LALT) );
+            // SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_V) SS_UP(X_LCTRL) SS_UP(X_LALT) );
             return false;
         case IJ_EXT_C:
-            SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_C) SS_UP(X_LCTRL) SS_UP(X_LALT) );
+            // SEND_STRING( SS_DOWN(X_LCTRL) SS_DOWN(X_LALT) SS_TAP(X_C) SS_UP(X_LCTRL) SS_UP(X_LALT) );
             return false;
         case VM_LN_UP:
             SEND_STRING( SS_TAP(X_ESC) SS_TAP(X_D) SS_TAP(X_D) SS_TAP(X_UP) SS_DOWN(X_LSFT) SS_TAP(X_P) SS_UP(X_LSFT) );
