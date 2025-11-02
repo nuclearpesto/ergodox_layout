@@ -1,9 +1,6 @@
 #include  QMK_KEYBOARD_H
 #include  "keymap_swedish.h"
 #define ___ KC_TRNS
-//#define D(STUFF) SS_DOWN(STUFF)
-//#define U(STUFF) SS_UP(STUFF)
-//#define T(STUFF) SS_TAP(X_STUFF)
 
 enum layers {
     BASE, // default layer(qwerty)
@@ -12,9 +9,6 @@ enum layers {
     GAME  // game layer
 };
 
-
-//#undef TAPPING_TERM
-//#define TAPPING_TERM 300
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
