@@ -92,11 +92,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // SYMBOLS
   [SYMB] = LAYOUT_ergodox(
                   // left hand
-                  ___, KC_F1,   KC_F2,      KC_F3,      KC_F4,      KC_F5, ___,
-                  ___, SE_EXLM, SE_AT,      SE_LCBR,    SE_RCBR, SE_PIPE,  ___,
-                  ___, SE_HASH, SE_DLR,     SE_LPRN,    SE_RPRN, SE_GRV,
-                  ___, SE_PERC, SE_CIRC,    SE_LBRC,    SE_RBRC, SE_TILD,  ___,
-                  ___, ___,     ___,        ___,        ___,
+                  ___, KC_F1,   KC_F2,   KC_F3,   KC_F4,      KC_F5, ___,
+                  ___, SE_EXLM, SE_AT,   SE_LCBR, SE_RCBR, SE_PIPE,  ___,
+                  ___, SE_HASH, SE_DLR,  SE_LPRN, SE_RPRN, SE_GRV,
+                  ___, SE_PERC, SE_CIRC, SE_LBRC, SE_RBRC, SE_TILD,  ___,
+                  ___, ___,     ___,     ___,     ___,
 
 		                                                                      ___, ___,
                                                                                    ___,
@@ -104,11 +104,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 		  // right hand
-                  ___, KC_F6,      KC_F7,   KC_F8,  KC_F9,  KC_F10,   KC_F11,
-                  ___, KC_UP,      KC_7,    KC_8,   KC_9,   KC_PAST,  KC_F12,
-                       KC_DOWN,    KC_4,    KC_5,   KC_6,   KC_PPLS,  ___,
-                  ___, SE_COLN,    KC_1,    KC_2,   KC_3,   SE_BSLS,  KC_CAPS_LOCK,
-                                   KC_0,    KC_0,   KC_DOT, SE_EQL,   SE_TILD,
+                  ___, KC_F6,   KC_F7, KC_F8, KC_F9,  KC_F10,  KC_F11,
+                  ___, KC_UP,   KC_7,  KC_8,  KC_9,   KC_PAST, KC_F12,
+                       KC_DOWN, KC_4,  KC_5,  KC_6,   KC_PPLS, ___,
+                  ___, SE_COLN, KC_1,  KC_2,  KC_3,   SE_BSLS, KC_CAPS_LOCK,
+                                KC_0,  KC_0,  KC_DOT, SE_EQL,  SE_TILD,
 
                   ___, ___,
                   ___,
@@ -143,7 +143,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                   ___,     ___,     ___,     ___,     ___,     ___,     ___,
                   ___,     ___,     ___,     ___,     ___,
 
-		                                                   ___, ___,
+		                                                           ___, ___,
                                                                         ___,
                                                               ___, ___, ___,
 
@@ -151,9 +151,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		  // right hand
           ___, KC_F6, KC_F7,   KC_F8,   KC_F9,   KC_F10, KC_F11,
           ___,   ___, KC_MPLY, KC_VOLU, ___,     ___,    KC_F12,
-                 ___, KC_MPRV, KC_VOLD, KC_MNXT, ___,     ___,
-          ___,   ___, ___,     KC_MUTE, ___,     ___,     ___,
-                      ___,     ___,     ___,     ___,     ___,
+                 ___, KC_MPRV, KC_VOLD, KC_MNXT, ___,    ___,
+          ___,   ___, ___,     KC_MUTE, ___,     ___,    ___,
+                      ___,     ___,     ___,     ___,    ___,
 
 		          ___, ___,
                   ___,
@@ -182,10 +182,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    *                                 `--------------------'       `--------------------'
    */
   [GAME] = LAYOUT_ergodox(
-                  ___,      ___,  ___,  ___, ___, ___, ___,
-                  ___,      ___,  ___,  ___, ___, ___, ___,
-                  KC_ESC,      KC_A, KC_S, ___, ___, KC_G,
-                  KC_LSFT,  ___,  ___,  ___, ___, ___, ___,
+                  ___,     ___,  ___,  ___, ___, ___, ___,
+                  ___,     ___,  ___,  ___, ___, ___, ___,
+                  KC_ESC,  KC_A, KC_S, ___, ___, KC_G,
+                  KC_LSFT, ___,  ___,  ___, ___, ___, ___,
                   KC_LCTL, ___,  ___,  ___, ___,
 
 		                                     ___, ___,
