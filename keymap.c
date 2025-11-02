@@ -37,29 +37,29 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // Otherwise, it needs KC_*
   [BASE] = LAYOUT_ergodox(  // layer 0 : default
                   // left hand
-                  SE_GRV,          SE_1,           SE_2,           SE_3,    SE_4,    SE_5,  KC_MUTE,
-                  KC_TAB,          SE_Q,           SE_W,           SE_E,    SE_R,    SE_T,  SE_COLN,
-                  KC_LGUI,        SE_A,           LT(SYMB, SE_S), SE_D,    SE_F,    SE_G,
-                  TG(SYMB),        SE_Z,           SE_X,           SE_C,    SE_V,    SE_B,  KC_LSFT,
-                  KC_APP,          SE_LABK,        KC_LGUI,        KC_LEFT, KC_RGHT,
+                  SE_GRV,    SE_1,    SE_2,           SE_3,    SE_4,    SE_5,  KC_MUTE,
+                  KC_TAB,    SE_Q,    SE_W,           SE_E,    SE_R,    SE_T,  SE_COLN,
+                  KC_LGUI,   SE_A,    LT(SYMB, SE_S), SE_D,    SE_F,    SE_G,
+                  TG(SYMB),  SE_Z,    SE_X,           SE_C,    SE_V,    SE_B,  KC_LSFT,
+                  KC_APP,    SE_LABK, KC_LGUI,        KC_LEFT, KC_RGHT,
 
-                                                                                    KC_LALT, KC_HOME,
-                                                                                              KC_DEL,
-                                                                     KC_SPC, KC_BSPC, LCTL_T(KC_ESC),
+                                                                      KC_LALT, KC_HOME,
+                                                                                KC_DEL,
+                                                       KC_SPC, KC_BSPC, LCTL_T(KC_ESC),
 
 
 
 		  // right hand
-                  SE_ACUT,      SE_6,    SE_7,    SE_8,    SE_9,    SE_0,              SE_PLUS,
-                  DF(GAME),     SE_Y,    SE_U,    SE_I,    SE_O,    SE_P,              SE_ARNG,
-                                SE_H,    SE_J,    SE_K,    SE_L,    LT(MDIA, SE_ODIA), SE_ADIA,
-                  KC_RSFT,      SE_N,    SE_M,    SE_COMM, SE_DOT,  SE_MINS,           SE_QUOT,
-                                         KC_UP,   KC_DOWN, KC_RGUI, SE_COLN,           MO(SYMB),
+                  SE_ACUT,  SE_6,  SE_7,  SE_8,    SE_9,    SE_0,              SE_PLUS,
+                  DF(GAME), SE_Y,  SE_U,  SE_I,    SE_O,    SE_P,              SE_ARNG,
+                            SE_H,  SE_J,  SE_K,    SE_L,    LT(MDIA, SE_ODIA), SE_ADIA,
+                  KC_RSFT,  SE_N,  SE_M,  SE_COMM, SE_DOT,  SE_MINS,           SE_QUOT,
+                                   KC_UP, KC_DOWN, KC_RGUI, SE_COLN,           MO(SYMB),
 
                   KC_PGUP, KC_RALT,
                   KC_PGDN,
                   KC_LGUI, RCTL_T(KC_ESC), KC_ENT
-                    ),
+  ),
 
 
   /* Keymap 1: Symbol Layer
@@ -107,7 +107,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                   ___, ___,
                   ___,
                   ___, ___, ___
-                  ),
+  ),
   /* Keymap 2: Media and mouse keys
    *
    * ,--------------------------------------------------.           ,--------------------------------------------------.
@@ -152,7 +152,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		          ___, ___,
                   ___,
                   ___, ___, KC_WBAK
-                  ),
+  ),
 
   /* Keymap 4: Gaming specific base layer, currently not doing much.
    *
@@ -161,11 +161,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
    * |        |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
    * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
-   * |        |   A  |   S  |      |      |      |------|           |------|      |      |      |      |      |        |
+   * |   ESC  |   A  |   S  |      |      |  G   |------|           |------|      |      |      |      |      |        |
    * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
-   * |        |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
+   * |  LSFT  |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
    * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
-   *   |      |      |      |      |      |                                       |      |      |      |      |        |
+   *   | LCTL |      |      |      |      |                                       |      |      |      |      |        |
    *   `----------------------------------'                                       `------------------------------------'
    *                                        ,-------------.       ,-------------.
    *                                        |      |      |       |      |      |
@@ -197,7 +197,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		          ___, ___,
                   ___,
                   ___, ___, ___
-                  )
+  )
 };
 
 
